@@ -1,20 +1,89 @@
 {
   "name": "citation-finder-ai-mcp",
-  "description": "MEOK AI Labs \u2014 citation-finder-ai-mcp \u2014 Find and format academic citations.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/citation-finder-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "citation-finder-ai-mcp \u2014 Find and format academic citations.",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Research",
-    "Academic"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "format_citation",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "style": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "authors",
+          "year"
+        ]
+      }
+    },
+    {
+      "name": "generate_bibtex",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "journal": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "authors",
+          "year"
+        ]
+      }
+    },
+    {
+      "name": "parse_citation",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "citation_text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation_text"
+        ]
+      }
+    },
+    {
+      "name": "validate_doi",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "doi": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "doi"
+        ]
+      }
+    }
+  ]
 }

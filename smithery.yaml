@@ -1,10 +1,46 @@
 name: citation-finder-ai-mcp
-description: "MEOK AI Labs — citation-finder-ai-mcp — Find and format academic citations."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/citation-finder-ai-mcp
-license: MIT
-categories: [Research, Academic]
-tags: [citation, academic-references, bibliography, research-tools]
-runtime: python
-entrypoint: server.py
+description: "citation-finder-ai-mcp \u2014 Find and format academic citations."
+version: 1.0.0
+tools:
+- name: format_citation
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: title
+    type: string
+    required: true
+  - name: authors
+    type: string
+    required: true
+  - name: year
+    type: integer
+    required: true
+  - name: style
+    type: string
+    required: false
+- name: generate_bibtex
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: title
+    type: string
+    required: true
+  - name: authors
+    type: string
+    required: true
+  - name: year
+    type: integer
+    required: true
+  - name: journal
+    type: string
+    required: false
+- name: parse_citation
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: citation_text
+    type: string
+    required: true
+- name: validate_doi
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: doi
+    type: string
+    required: true
