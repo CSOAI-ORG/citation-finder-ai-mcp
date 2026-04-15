@@ -1,5 +1,5 @@
 name: citation-finder-ai-mcp
-description: "citation-finder-ai-mcp \u2014 Find and format academic citations."
+description: "MEOK AI Labs \u2014 Find and format academic citations."
 version: 1.0.0
 tools:
 - name: format_citation
