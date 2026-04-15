@@ -1,5 +1,6 @@
 name: citation-finder-ai-mcp
-description: "MEOK AI Labs \u2014 Find and format academic citations."
+description: MCP server for citation finder ai. Features format citation, generate
+  bibtex, parse citation. From MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: format_citation
