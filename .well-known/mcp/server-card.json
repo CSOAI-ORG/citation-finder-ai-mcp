@@ -1,0 +1,54 @@
+{
+  "name": "citation-finder-ai",
+  "description": "Find and format academic citations in APA, MLA, Chicago, and BibTeX. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/citation-finder-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "find_citations",
+      "description": "Search for academic citations by topic, title, or author. Returns structured results for further formatting."
+    },
+    {
+      "name": "format_citation",
+      "description": "Format a citation in the specified style (apa, mla, chicago, bibtex, harvard)."
+    },
+    {
+      "name": "check_doi",
+      "description": "Validate a DOI format and return its resolution URL and metadata lookup link."
+    },
+    {
+      "name": "generate_bibliography",
+      "description": "Generate a formatted bibliography from a JSON array of citation objects. Each object needs: title, authors, year."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Education & Research",
+    "Legal & Regulatory"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
