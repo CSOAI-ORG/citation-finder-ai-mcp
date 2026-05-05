@@ -1,55 +1,38 @@
-# Citation Finder AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Find and format academic citations in APA, MLA, Chicago, and BibTeX
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/citation-finder-ai-mcp)](https://github.com/CSOAI-ORG/citation-finder-ai-mcp/stargazers)
+
+# ucitationU finderU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/citation-finder-ai-mcp)](https://www.npmjs.com/package/@meok-ai/citation-finder-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/citation-finder-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install citation-finder-ai-mcp
+# or
+npm install -g @meok-ai/citation-finder-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `format_citation`
-Format a citation in a specified style (APA, MLA, Chicago, etc.).
-
-**Parameters:**
-- `title` (str): Work title
-- `authors` (str): Author names
-- `year` (int): Publication year
-- `style` (str): Citation style (default 'apa')
-
-### `generate_bibtex`
-Generate a BibTeX entry from citation details.
-
-**Parameters:**
-- `title` (str): Work title
-- `authors` (str): Author names
-- `year` (int): Publication year
-- `journal` (str): Journal name
-
-### `parse_citation`
-Parse a raw citation text into structured fields.
-
-**Parameters:**
-- `citation_text` (str): Raw citation text
-
-### `validate_doi`
-Validate a DOI (Digital Object Identifier).
-
-**Parameters:**
-- `doi` (str): DOI to validate
-
-## Authentication
-
-Free tier: 30 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
