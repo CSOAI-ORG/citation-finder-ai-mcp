@@ -88,6 +88,12 @@ def find_citations(query: str, max_results: int = 5, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        query (str): The query to analyze or process.
+        max_results (int): The max results to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -145,6 +151,20 @@ def format_citation(title: str, authors: str, year: int, style: str = "apa", jou
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        title (str): The title to analyze or process.
+        authors (str): The authors to analyze or process.
+        year (int): The year to analyze or process.
+        style (str): The style to analyze or process.
+        journal (str): The journal to analyze or process.
+        volume (str): The volume to analyze or process.
+        pages (str): The pages to analyze or process.
+        doi (str): The doi to analyze or process.
+        publisher (str): The publisher to analyze or process.
+        url (str): The url to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -282,6 +302,11 @@ def check_doi(doi: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        doi (str): The doi to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -342,6 +367,13 @@ def generate_bibliography(citations_json: str, style: str = "apa", sort_by: str 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        citations_json (str): The citations json to analyze or process.
+        style (str): The style to analyze or process.
+        sort_by (str): The sort by to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
