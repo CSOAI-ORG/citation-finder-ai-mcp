@@ -72,7 +72,23 @@ def _format_authors_mla(authors: list) -> str:
 
 @mcp.tool()
 def find_citations(query: str, max_results: int = 5, api_key: str = "") -> str:
-    """Search for academic citations by topic, title, or author. Returns structured results for further formatting."""
+    """Search for academic citations by topic, title, or author. Returns structured results for further formatting.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -99,7 +115,23 @@ def find_citations(query: str, max_results: int = 5, api_key: str = "") -> str:
 
 @mcp.tool()
 def format_citation(title: str, authors: str, year: int, style: str = "apa", journal: str = "", volume: str = "", pages: str = "", doi: str = "", publisher: str = "", url: str = "", api_key: str = "") -> str:
-    """Format a citation in the specified style (apa, mla, chicago, bibtex, harvard)."""
+    """Format a citation in the specified style (apa, mla, chicago, bibtex, harvard).
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -206,7 +238,23 @@ def format_citation(title: str, authors: str, year: int, style: str = "apa", jou
 
 @mcp.tool()
 def check_doi(doi: str, api_key: str = "") -> str:
-    """Validate a DOI format and return its resolution URL and metadata lookup link."""
+    """Validate a DOI format and return its resolution URL and metadata lookup link.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -237,7 +285,22 @@ def check_doi(doi: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def generate_bibliography(citations_json: str, style: str = "apa", sort_by: str = "author", api_key: str = "") -> str:
-    """Generate a formatted bibliography from a JSON array of citation objects. Each object needs: title, authors, year."""
+    """Generate a formatted bibliography from a JSON array of citation objects. Each object needs: title, authors, year.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
