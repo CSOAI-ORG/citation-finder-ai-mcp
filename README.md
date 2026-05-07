@@ -1,3 +1,5 @@
+[![citation-finder-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/citation-finder-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/citation-finder-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/citation-finder-ai-mcp)](https://github.com/CSOAI-ORG/citation-finder-ai-mcp/stargazers)
