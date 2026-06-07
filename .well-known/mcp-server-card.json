@@ -1,0 +1,25 @@
+{
+  "name": "citation-finder-ai-mcp",
+  "title": "Citation Finder Ai Mcp",
+  "description": "MCP server for citation finder ai. Features format citation, generate bibtex, parse citation. From MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "find_citations"
+    },
+    {
+      "name": "format_citation"
+    },
+    {
+      "name": "check_doi"
+    },
+    {
+      "name": "generate_bibliography"
+    }
+  ]
+}

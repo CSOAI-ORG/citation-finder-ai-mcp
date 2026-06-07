@@ -1,31 +1,33 @@
-# Citation Finder Ai MCP
-
-> MEOK AI Labs — Find and format academic citations
-
-`citation-finder-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# citation-finder-ai-mcp
+# **MCP server for citation finder ai mcp operations**
 
 ## Install
-
 ```bash
 pip install citation-finder-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx citation-finder-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `find_citations` — Search for academic citations by topic, title, or author. Returns structured results for further formatting.
-- `format_citation` — Format a citation in the specified style (apa, mla, chicago, bibtex, harvard).
-- `check_doi` — Validate a DOI format and return its resolution URL and metadata lookup link.
-- `generate_bibliography` — Generate a formatted bibliography from a JSON array of citation objects. Each object needs: title, authors, year.
+### `find_citations`
+Search for academic citations by topic, title, or author. Returns structured results for further formatting.
 
-## Links
+### `format_citation`
+Format a citation in the specified style (apa, mla, chicago, bibtex, harvard).
 
-- Source: https://github.com/CSOAI-ORG/citation-finder-ai-mcp
-- PyPI: https://pypi.org/project/citation-finder-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `check_doi`
+Validate a DOI format and return its resolution URL and metadata lookup link.
+
+### `generate_bibliography`
+Generate a formatted bibliography from a JSON array of citation objects. Each object needs: title, authors, year.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
 Find and format academic citations in APA, MLA, Chicago, and BibTeX styles. — MEOK AI Labs."""
 
 import sys, os

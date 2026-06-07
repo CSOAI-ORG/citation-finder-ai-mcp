@@ -1,0 +1,9 @@
+# citation-finder-ai-mcp - Auto-trigger Rules
+
+When the user asks about citation finder, use citation-finder-ai-mcp tools: find_citations, format_citation, check_doi, generate_bibliography
+
+**MCP server for citation finder ai mcp operations**
+
+Install: `pip install citation-finder-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
